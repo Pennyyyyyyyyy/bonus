@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Form</title>
+  <style>
+    /* Additional styles for enhanced aesthetics */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    /* Styling the form container */
+    .form-container {
+      width: 60%;
+      margin: 50px auto; /* Centering the form horizontally */
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    /* Styling the input groups */
+    .input-group {
+      margin-bottom: 3%;
+      display: inline-block;
+      width: 100%;
+    }
+
+    /* Styling labels */
+    .input-group label {
+      display: block;
+      margin-bottom: 1%;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Styling text inputs, file input, and textarea */
+    .input-group input[type="text"],
+    .input-group input[type="file"],
+    .input-group textarea {
+      width: 94%;
+      padding: 1%;
+      border: 1px solid #ccc;
+      border-radius: 8px; /* Rounded border */
+      font-size: 14px;
+      box-sizing: border-box; /* Includes padding and border in width/height */
+    }
+
+    /* Clear floats */
+    .input-group:after {
+      content: "";
+      display: table;
+      clear: both;
+      float: right;
+    }
+
+    /* Styling textarea */
+    textarea {
+      resize: none; /* Disabling textarea resizing */
+      border-radius: 8px; /* Rounded border */
+    }
+
+    /* Styling the image */
+    .custom-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="form-container">
+  <!-- Your form content here -->
+  <div class="input-group" style="display: flex;">
+    <label for="input1" style="width: 15%;">input 1</label>
+    <input type="text" id="input1" name="input1" style="width: 85%;" placeholder="Input 1">
+  </div>
+
+  <div class="input-group" style="display: flex;">
+    <label for="input2" style="width: 15%;">input 2</label>
+    <input type="text" id="input2" name="input2" style="width: 35%;" placeholder="Input 2">
+    <label for="input3" style="width: 15%;">input 3</label>
+    <input type="text" id="input3" name="input3" style="width: 35%;" placeholder="Input 3">
+    <div style="clear: both;"></div> <!-- Clear float to start a new line -->
+  </div>
+
+  <div class="input-group" style="display: flex;">
+    <label for="input4" style="width: 15%;">input 4</label>
+    <input type="text" id="input4" name="input4" style="width: 85%;" placeholder="Input 4">
+  </div>
+
+  <div class="input-group" style="display: flex;" >
+    <label for="message" style="width: 15%;">textarea</label>
+    <textarea id="message" name="message" rows="5" cols="50" style="width: 85%; resize: none;"></textarea>
+  </div>
+  
+  <div class="input-group" style="display: flex;">
+    <label for="picture1" style="width: 15%;">picture 1</label>
+     <img class="custom-image" src="https://static.vecteezy.com/system/resources/thumbnails/009/273/280/small/concept-of-loneliness-and-disappointment-in-love-sad-man-sitting-element-of-the-picture-is-decorated-by-nasa-free-photo.jpg" style="width: 85%;" alt="Example Image">
+  </div> 
+</div>
+
+</body>
+</html>
